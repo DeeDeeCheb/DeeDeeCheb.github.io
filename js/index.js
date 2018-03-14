@@ -47,7 +47,7 @@ $.ajax({
 	success: function(result){
  		console.log(result);
 		for( x in result.data ){
-			$('#instafeed').append('<a href="'+result.data[x].link+'"" class="col-12 col-md-12 col-lg-4 col-xl-4 mb-5" target="_blank"><img class="img-fluid img-thumbnail rounded mx-auto d-block" src="'+result.data[x].images.standard_resolution.url+'"></a>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
+			$('#instafeed').append('<a href="'+result.data[x].link+'"" class="col-12 col-md-12 col-lg-4 col-xl-4 mb-5" target="_blank"><img class="img-fluid rounded mx-auto d-block" src="'+result.data[x].images.standard_resolution.url+'"></a>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
 			// result.data[x].images.thumbnail.url - URL картинки 150х150
 			// result.data[x].images.standard_resolution.url - URL картинки 612х612
 			// result.data[x].link - URL страницы данного поста в Инстаграм 
