@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+body {
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #445878;
+  /*background-color:#D7DCF2;*/
+}
+
+.row-block {
+	min-height: 93vh;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.navbar {
+  background-color: #1C1D21;
+  padding: 1em 0;
+  box-sizing: border-box;
+  width: 100% !important;
+}
+.navbar-toggler-icon {
+  border: 1px solid black;
+}
+.navbar-brand {
+  margin-left: 30px;
+  color: #EEEFF7 !important;
+  width: 127px;
+  line-height: 0.8em;
+}
+.navbar-brand strong {
+  font-size: 2em;
+}
+.navbar-brand span {
+  color: red;
+}
+.navbar-brand small {
+  font-size: 0.8em;
+}
+.nav-link {
+  color: #EEEFF7;
+  margin-right: 1em;
+  border-radius: 0.5em;
+}
+.nav-link:hover {
+  color: #A8ADC1;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.header {
+  background-image: url('https://github.com/DeeDee23cheb/DeeDee23cheb.github.io/blob/master/IS/img/IMG_5588.JPG?raw=true');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+}
+
+.about {
+	min-height: 100vh;
+}
+
+.about_text {
+	border-left: 1px solid #EEEFF7;
+	color:#EEEFF7 !important;
+}
+
+.about_img {
+	border-radius: 50%;
+}
+
+.btn {
+	background-color:#1C1D21;
+	border-color: #1C1D21;
+}
+
+.btn:hover {
+	background-color:#31353D;
+	border-color: #31353D;
+}
+
+.btn:active {
+	background-color:#41353D;
+	border-color: #41353D;
+}
+
+.carusel-caption-text {
+  color: #EEEFF7 !important;
+  text-shadow: 1px 1px 2px black;
+}
+.carusel-wed {
+  border-radius: 0.1em;
+  margin-bottom: 30px;
+}
+
+.carousel-block {
+
+}
+
+.instafeed {
+
+}
+
+.instafeed-block:hover {
+	transform: scale(1.05);
+	transition:0.3s;
+}
+
+.instafeed-block {
+	margin-bottom: 30px;
+}
+
+.contacts {
+	
+}
+
+.btn-group {
+	height: 200px;
+}
+
+.contacts_btn-group .btn {
+	width: 200px;
+	height: 66px;
+	border-color:#606C76;
+	color: #606C76;
+	font-size: 2em;
+}
+
+.contacts_btn-group .btn:hover {
+	background-color:#868A8B;
+}
+
+.contacts_btn-group .btn:active {
+	background-color:#606C76;
+}
+
+.contacts_list_item {
+	margin-bottom: 2em !important;
+}
+
+.contacts_list {
+	border-right: 1px solid #EEEFF7;
+}
+
+.form-group_btn,
+.form-group_row {
+	margin-top: 30px;
+}
+
+.form-control_textarea {
+	resize: none;
+}
+
+.form-group,
+.callme,
+.gallery {
+	color:#EEEFF7 !important;
+}
+
+.icon,
+.tel {
+	font-size: 2em;
+}
