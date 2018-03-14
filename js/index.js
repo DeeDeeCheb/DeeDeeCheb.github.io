@@ -29,15 +29,15 @@
   $(document).ready(function(){
      $("body").on('click', 'a.scrollable', function(e){
  	 var fixed_offset = 70;
-  	$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset}, 1500);
+  	$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset}, 1000);
   	e.preventDefault();
 });
-     $('.about_text').height($('.about_img').height());
      $('.callme').height($('.contacts_list').height());
+     $('body').scrollspy({target: "#navbar", offset: 100});  
 
 var tok = '283213643.ab79913.ce020b64710d488ebd874156cb782550', // я уже давал ссылку чуть выше
     userid = 283213643, // ID пользователя, можно выкопать в исходном HTML, можно использовать спец. сервисы либо просто смотрите следующий пример :)
-    kolichestvo = 18; // ну это понятно - сколько фоток хотим вывести
+    kolichestvo = 6; // ну это понятно - сколько фоток хотим вывести
  
 $.ajax({
 	url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
@@ -47,7 +47,7 @@ $.ajax({
 	success: function(result){
  		console.log(result);
 		for( x in result.data ){
-			$('#instafeed').append('<a href="'+result.data[x].link+'"" class="col-lg-4 col-12" target="_blank"><img  width="300" height="300" class="img-fluid img-thumbnail rounded mx-auto d-block" src="'+result.data[x].images.standard_resolution.url+'"></a>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
+			$('#instafeed').append('<a href="'+result.data[x].link+'"" class="col-12 col-md-12 col-lg-4 col-xl-4 mb-5" target="_blank"><img class="img-fluid img-thumbnail rounded mx-auto d-block" src="'+result.data[x].images.standard_resolution.url+'"></a>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
 			// result.data[x].images.thumbnail.url - URL картинки 150х150
 			// result.data[x].images.standard_resolution.url - URL картинки 612х612
 			// result.data[x].link - URL страницы данного поста в Инстаграм 

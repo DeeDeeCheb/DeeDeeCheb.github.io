@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ru" >
 
 <head>
 	<meta charset="UTF-8">
-	<title>A Pen by  Stanislav</title>
+	<title>Фотограф Сергей Ильин</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 	<script src="js/instafeed.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://vk.com/js/api/openapi.js?152" type="text/javascript"></script>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<div class="container-fluid">
-<!-- Меню -->
-  <nav  id="navbar" class="navbar navbar-expand fixed-top">
-	<a class="navbar-brand"><strong>IS</strong><span>.</span><small class="lead">photographer</small></a>
+<body  data-spy="scroll" >
+<div class="container-fluid" id="top">
+	<!-- Меню -->
+  <nav  id="navbar" class="navbar navbar-expand-md fixed-top">
+	<a href="#top" class="navbar-brand scrollable"><strong>IS</strong><span>.</span><small class="lead">photographer</small></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
+     <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:1.5em;"></i></span>
    </button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav nav-pills mr-4">
@@ -31,7 +33,7 @@
          <a class="nav-link scrollable" href="#gallery">Галерея</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link scrollable" href="#instafeed">Мой инстраграм</a>
+         <a class="nav-link scrollable" href="#instafeed">Инстаграм</a>
        </li>
        <li class="nav-item">
          <a class="nav-link scrollable" href="#contacts">Контакты</a>
@@ -40,22 +42,24 @@
 	</div>
 </nav>
 <!-- О себе -->
-	<div id="about" class="col-12">
+<main>
+
+	<div id="about" class="col">
 	</div>
-	<div class="row row-block justify-content-center align-items-center about">
-		<div class="col-12 col-lg-5 about_img">
+	<div class="row row-block justify-content-center align-items-center about px-lg-5">
+		<div class="col-12 col-md-6 col-lg-6 col-xl-3  about_img">
 			<img src="img/foto-is.jpg" class="img-fluid about_img" alt="Сергей Ильин">
 		</div>
-		<div class="col-12 col-lg-5 about_text">
+		<div class="col-12 col-md-6 col-lg-6 col-xl-3 about_text">
 			<h2> Сергей Ильин</h2> 
 			<h2><small>Профессиональный фотограф</small></h2>
 			<p>Текст обо мне, о том какой я крутой фотограф</p>
 			<a class="btn btn-sm btn-block btn-about-vk btn-primary" href="https://vk.com/man1k" role="button" target="_blank"><i class="fab fa-vk"></i> Группа В Контакте</a>
 		</div>
 	</div>
-	<!-- Карусель -->
-	<div id="portfolio" class="row row-block justify-content-center align-items-center carousel-block">
-			<div id="carousel1" class="carousel slide col-12 col-lg-12 carusel-photo " data-ride="carousel">
+<!-- Карусель -->
+	<div id="portfolio" class="row row-block justify-content-center align-items-center carousel-block  px-lg-5">
+			<div id="carousel1" class="carousel slide col-12 col-md-12 col-lg-8 col-xl-8 carusel-photo " data-ride="carousel">
 				<div class="carousel-inner carusel-wed">
 					<div class="carousel-item active">
 						<img class="img-thumbnail rounded d-block w-100" src="https://pp.userapi.com/c824502/v824502372/dd6b0/ccngByekjsw.jpg" alt="Первый слайд">
@@ -86,41 +90,33 @@
 				</div>
 			</div>
 	</div>
-	<div class="row row-block justify-content-around align-items-center gallery" id="gallery">
-		<div class="col-12 col-lg-6">
-			<a href="https://vk.com/photo-51029343_456239203?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c841429/v841429673/32a5a/IGda1yYMClE.jpg" alt="placeholder+image"></a>
-			<p class="text-center">Свадебные фотографии</p>
+<!-- Галерея -->
+	<div class="row row-block justify-content-around align-items-center gallery px-lg-5 px-xl-5" id="gallery">
+		<div class="col-12 col-md-12 col-lg-6 col-xl-6">
+			<a href="https://vk.com/album-51029343_171280197?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c841429/v841429673/32a5a/IGda1yYMClE.jpg" alt="placeholder+image"></a>
+			<h5 class="text-center">Свадебные фотографии</h5>
 		</div>
-		<div class="col-12 col-lg-6">
-			<a href="https://vk.com/photo-51029343_421280456" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c636429/v636429759/f096/uTL-UcOZ2DM.jpg" alt="placeholder+image"></a>
-			<p class="text-center">Love Story</p>
+		<div class="col-12 col-md-12 col-lg-6 col-xl-6">
+			<a href="https://vk.com/album-51029343_173891255?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c636429/v636429759/f096/uTL-UcOZ2DM.jpg" alt="placeholder+image"></a>
+			<h5 class="text-center">Love Story</h5>
 		</div>
-		<div class="col-12 col-lg-6">
-			<a href="https://vk.com/photo-51029343_431732439?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c626823/v626823759/a464/wGkoRfbLhpA.jpg" alt="placeholder+image"></a>
-			<p class="text-center">Фотосессии</p>
+		<div class="col-12 col-md-12 col-lg-6 col-xl-6">
+			<a href="https://vk.com/album-51029343_171281003?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c626823/v626823759/a464/wGkoRfbLhpA.jpg" alt="placeholder+image"></a>
+			<h5 class="text-center">Фотосессии</h5>
 		</div>
-		<div class="col-12 col-lg-6">
-			<a href="https://vk.com/photo-51029343_377018671?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c623230/v623230759/3b65c/4oTmzIXcKGY.jpg" alt="placeholder+image"></a>
-			<p class="text-center">Мероприятия</p>
+		<div class="col-12 col-md-12 col-lg-6 col-xl-6 ">
+			<a href="https://vk.com/album-51029343_171287247?rev=1" target="_blank"><img class="img-fluid rounded" src="https://pp.userapi.com/c623230/v623230759/3b65c/4oTmzIXcKGY.jpg" alt="placeholder+image"></a>
+			<h5 class="text-center">Мероприятия</h5>
 		</div>
 	</div>
 <!-- Инстраграмм -->
-	<div class="row row-block align-items-center justify-content-around instafeed" id="instafeed">
+	<div class="row row-block align-items-center justify-content-around instafeed px-lg-5 px-xl-5" id="instafeed">
 
 	</div>
-	<!-- <div class="row">
-		<div class="col-lg-4" id="vk_groups">
-VK Widget
-		 </div>
-		<script type="text/javascript">
-		VK.Widgets.Group("vk_groups", {mode: 4, height:'300',  width:'auto'}, 51029343);
-		</script>
-	</div> -->
-
-	<!-- Контакты -->
-	<div class="row row-block contacts justify-content-center align-items-center" id="contacts">
-		<div class="col-12 col-lg-7 contacts_list">
-			<form action="#" method="post" class="form-group">
+<!-- Контакты -->
+	<div class="row row-block contacts justify-content-center align-items-center px-lg-5 px-xl-5"  >
+		<div class="col-12 col-lg-7 contacts_list" id="contacts">
+			<form action="#" method="post" class="form-group" >
 				<div class="row form-group_row">
 					<div class="col">
 						<label for="name">Ваше имя</label>
@@ -153,12 +149,23 @@ VK Widget
 				</div>
 			</form>	
 		</div>
-		<div class="col-12 col-lg-3 callme">
+		<div class="col-12 col-lg-3 callme d-flex flex-column justify-content-start">
 			<h3>Позвоните мне!</h3>
-			<p class="tel">+79625991976</p>
-			<p class="icon text-justify"><i class="fab fa-whatsapp"></i> <i class="fab fa-viber"></i> <i class="fab fa-telegram"></i></p>
+			<a class="tel" href="tel:+79625991976">+79625991976</a>
+			<h3><small>Или напишите</small></h3>
+			<div class="btn-group-vertical btn-message-block">
+				<a href="https://api.whatsapp.com/send?phone=79625991976" class="btn btn-sm btn-block callme_whatsapp" type="button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+				<a href="viber://chat?number=79625991976" class="btn btn-sm btn-block callme_viber" type="button"> <i class="fab fa-viber"></i> Viber</a>
+				<a class="btn btn-sm btn-block callme_telegram" type="button"> <i class="fab fa-telegram"></i> Telegram</a>
+			</div>
+		</div>
+		<div class="w-100"></div>
+		<div class="col-10 col-lg-3 d-flex justify-content-around align-items-center footer-icon">
+			<a href="https://vk.com/man1k"><i class="fab fa-vk"></i> </a>
+			<a href="http://instagram.com/sergeyifoto"><i class="fab fa-instagram"></i> </a>
 		</div>
 	</div>
+</main>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
 <script  src="js/index.js"></script>

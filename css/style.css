@@ -4,6 +4,7 @@ body {
 
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: #445878;
+  position: relative;
   /*background-color:#D7DCF2;*/
 }
 
@@ -11,8 +12,6 @@ body {
 	min-height: 93vh;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-right: 20%;
-	padding-left: 20%;
 }
 
 .navbar {
@@ -21,9 +20,7 @@ body {
   box-sizing: border-box;
   width: 100% !important;
 }
-.navbar-toggler-icon {
-  border: 1px solid black;
-}
+
 .navbar-brand {
   margin-left: 30px;
   color: #EEEFF7 !important;
@@ -50,16 +47,15 @@ body {
 .navbar-collapse {
   justify-content: flex-end;
 }
-.header {
-  background-image: url('https://github.com/DeeDee23cheb/DeeDee23cheb.github.io/blob/master/IS/img/IMG_5588.JPG?raw=true');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center;
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: #31353D;
 }
 
 .about {
 	min-height: 100vh;
 }
+
 
 .about_text {
 	border-left: 1px solid #EEEFF7;
@@ -162,3 +158,79 @@ body {
 .tel {
 	font-size: 2em;
 }
+
+.callme {
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.callme .btn {
+	font-size: 2em;
+}
+
+.callme a {
+	color:#EEEFF7 !important;
+	margin-bottom: 30px;
+}
+
+
+.callme_whatsapp {
+	background-color: #25d366;
+}
+
+.callme_viber {
+	background-color: #59267c;
+}
+
+.callme_telegram {
+	background-color: #0088cc;
+}
+
+.callme_whatsapp:hover {
+	background-color: #35d366;
+}
+
+.callme_viber:hover {
+	background-color: #69267c;
+}
+
+.callme_telegram:hover {
+	background-color: #1088cc;
+}
+
+.footer-icon {
+	font-size: 2em;
+}
+
+.footer-icon a{
+	color:#1C1D21;
+}
+
+.footer-icon a:hover{
+	color:#31353D;
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) { 
+	
+}
+
+// Extra small devices (portrait phones, less than 34em)
+@media (max-width: 33.9em) { 
+	.row-block {
+		min-height: 1px !important;
+		padding:0;
+	} 
+
+	.about {
+		margin-top:70px!important;
+	} }
+
+// Small devices (landscape phones, less than 48em)
+@media (max-width: 47.9em) { ... }
+
+// Medium devices (tablets, less than 62em)
+@media (max-width: 61.9em) { ... }
+
+// Large devices (desktops, less than 75em)
+@media (max-width: 74.9em) { ... }
