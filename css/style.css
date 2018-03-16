@@ -3,7 +3,7 @@
 body {
 
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #445878;
+  background-color: #EEEFF7;
   position: relative;
   /*background-color:#D7DCF2;*/
 }
@@ -58,8 +58,8 @@ body {
 
 
 .about_text {
-	border-left: 1px solid #EEEFF7;
-	color:#EEEFF7 !important;
+	border-left: 1px solid #1C1D21;
+	color:#1C1D21 !important;
 }
 
 .about_img {
@@ -82,7 +82,7 @@ body {
 }
 
 .carusel-caption-text {
-  color: #EEEFF7 !important;
+  color: #1C1D21 !important;
   text-shadow: 1px 1px 2px black;
 }
 .carusel-wed {
@@ -136,7 +136,7 @@ body {
 }
 
 .contacts_list {
-	border-right: 1px solid #EEEFF7;
+	border-right: 1px solid #1C1D21;
 }
 
 .form-group_btn,
@@ -151,7 +151,7 @@ body {
 .form-group,
 .callme,
 .gallery {
-	color:#EEEFF7 !important;
+	color:#1C1D21 !important;
 }
 
 .icon,
@@ -169,8 +169,16 @@ body {
 }
 
 .callme a {
-	color:#EEEFF7 !important;
+	color:#EEEFF7;
 	margin-bottom: 30px;
+}
+
+.tel {
+	color:#1C1D21 !important;
+}
+
+.tel:hover {
+	text-decoration: none !important;
 }
 
 
@@ -198,8 +206,18 @@ body {
 	background-color: #1088cc;
 }
 
+.callme_vk {
+	background-color: #597da3;
+	border-color:#597da3;
+}
+
+.callme_vk:hover {
+	background-color:#597da9;
+	border-color:#597da9;
+}
+
 .footer-icon {
-	font-size: 2em;
+	font-size: 2em !important;
 }
 
 .footer-icon a{
